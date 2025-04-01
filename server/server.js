@@ -16,6 +16,7 @@ app.use(cors());
 app.get('/', (req, res) => {
     res.send('Hello World!')
 })
+app.use('/api/user', require('./routes/userRoutes'));
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
