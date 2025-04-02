@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
     res.send('Hello World!')
 })
 app.use('/api/user', require('./routes/userRoutes'));
-
+app.use('/api/image', require('./routes/ImageRoutes'));
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 })
